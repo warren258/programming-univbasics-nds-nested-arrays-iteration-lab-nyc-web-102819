@@ -22,7 +22,15 @@ def find_greater_pair(src)
   # that are in the inner Arrays
   greatest = []
   i = 0 
-  
+  while i < src.length do
+    if src[i][0] > src[i][1]
+      greatest.push(src[i][0])
+    else 
+      greatest.push(src[i][1])
+    end 
+    i += 1
+  end
+  greatest
 end
 
 def total_even_pairs(src)
